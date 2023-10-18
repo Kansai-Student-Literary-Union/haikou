@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../battle.css">
+<script src="../music.js"></script>
+<script src="akahaiku.js"></script>
+<script src="sirohaiku.js"></script>
+<link rel="icon" href="../../haikoulogo.ico">
+</head>
+<body>
+<title>俳句甲子園模擬戦</title>
+<div style="display: flex;  justify-content: space-between; ">
+<h2>俳句甲子園模擬戦</h2>
+<div>
+<div class="timer" >
+    <div style="display: flex;">
+      <div id="minute3">3分</div>
+      <div id="second3">00秒</div>
+    </div>
+    <div>
+      <button id="startBtn3" style="height: 20px;">START</button>
+      <button id="stopBtn3" style="height: 20px;">STOP</button>
+      <button id="resetBtn3" style="height: 20px;">RESET</button>
+    </div>
+  </div>
+<script src="../timer.js"></script>
+  <div class="t30s">
+    <div style="display: flex;">
+      <div id="minute4"></div>
+      <div id="second4">30秒</div>
+  </div>
+  <div>
+      <button id="startBtn4" style="height: 20px;">START</button>
+      <button id="stopBtn4" style="height: 20px;">STOP</button>
+      <button id="resetBtn4" style="height: 20px;">RESET</button>
+  </div>
+</div>
+<script src="../30s.js"></script>
+</div>
+</div>
+</div>
+<div class="contents">
+<div class="btn" onclick="audio3()">入場</div>
+<div class="btn" onClick="mute3()">入場ミュート</div>
+<div class="btn" onclick="audio4()">退場</div>
+<div class="btn" onClick="mute4()">退場ミュート</div>
+<div class="btn" onclick="audio5()">待機</div>
+<div class="btn" onClick="mute5()">待機ミュート</div>
+　　
+<a href="../index.html" class="btn">大会HOME</a>
+<a href="index.html" class="btn">試合TOP</a>
+<a href="1.html" class="btn">先鋒戦</a>
+<a href="3.html" class="btn">中堅戦</a>
+<a href="5.html" class="btn">大将戦</a>
+</div>
+<audio id="btn_audio2"><source src="../b2_hikou.mp3" type="audio/mp3"></audio>
+<audio id="btn_audio3"><source src="../b1_in.mp3" type="audio/mp3"></audio>
+<audio id="btn_audio4"><source src="../b3_out.mp3" type="audio/mp3"></audio>
+<audio id="btn_audio5"><source src="../b5_standby26.mp3" type="audio/mp3"></audio>
+<br>
+<div id="wrapper">
+ <div id="left2">
+  <h3>紅</h3>
+   <div class="left"> 
+    <div class="ku">
+     <div id="left" class="kunakami">
+     <button id="btnA" class="hikou" onclick="audio2()">紅　披講</button>
+     </div>
+    </div>
+  </div>
+ </div>
+<div id="main">
+<h1>大将戦</h1><h2>兼題<br>
+  <div id="kendaiarea">
+    <script> 
+      const kendaiarea = document.getElementById('kendaiarea');
+      kendaiarea.textContent = "「" + kendai + "」";
+    </script>
+  </div>
+</h2>
+</div>
+<div id="right2">
+<h3>白</h3>
+  <div class="ku">
+   <div id="right" class="kunakami">
+   <button id="btnB" class="hikou" onclick="audio2()">白　披講</button>
+  </div>
+ </div>
+</div>
+</div>
+<script>
+    const left = document.getElementById('left');
+    const center = document.getElementById('center');
+    const right = document.getElementById('right');
+    const btnA = document.getElementById('btnA');
+    const btnB = document.getElementById('btnB');
+
+    let redShown = false;
+    let whiteShown = false;
+
+    function showRed() {
+      if (!redShown) {
+        redShown = true;
+        left.textContent = aka5;
+        btnA.style.display = "none";
+      }
+    }
+
+    function showWhite() {
+      if (!whiteShown) {
+        whiteShown = true;
+        right.textContent = siro5;
+        btnB.style.display = "none";
+      }
+    }
+    btnA.addEventListener('click', showRed);
+    btnB.addEventListener('click', showWhite);
+</script>
+</body>
+</html>
