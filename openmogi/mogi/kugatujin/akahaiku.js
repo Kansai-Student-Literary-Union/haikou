@@ -1,0 +1,5 @@
+var kendai = "九月尽"
+var akateam = "灘高校Ａチーム"
+var aka1 = "九月尽授業中みな足伸びて"
+var aka3 = "洗い場を泡流れゆく九月尽"
+var aka5 = "蠟燭の恥ずかしく立つ九月尽"
