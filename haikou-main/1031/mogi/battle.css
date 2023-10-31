@@ -1,0 +1,124 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);
+.contents {
+    display: flex;
+    width: 100%;
+}
+.btn {
+display: flex;
+    box-sizing: border-box;
+    background-color: #ffbc40;
+    color: #000000;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 10%;
+}
+#btnA, #btnB {
+width: 100px;
+height: 50px;
+}
+h1 {
+font-weight:600;
+font-size: 3em;
+color: black;
+}
+h2 {
+font-weight:600;
+font-size: 2em;
+color: black;
+}
+h3 {
+    font-weight:500;
+    font-size: 2em;
+    margin: 0px;
+    padding: 5px;
+    margin-bottom: 15px;
+    }
+#left {
+list-style-position: inside;
+text-align: left;
+float: center;
+height: 70vh;
+box-sizing: border-box;
+background: #ffaaff;
+}
+#main {
+float: left;
+text-align: center;
+width: 19%;
+height: 80vh;
+box-sizing: border-box;
+background: #ffffff;
+}
+#right {
+list-style-position: inside;
+text-align: left;
+float: center;
+height: 70vh;
+box-sizing: border-box;
+background: #ffffff;
+}
+#left2 {
+list-style-position: inside;
+text-align: center;
+float: left;
+width: 40%;
+height: 80vh;
+box-sizing: border-box;
+background: #ffaaff;
+border: 2px solid #000000;
+}
+#right2 {
+list-style-position: inside;
+text-align: center;
+float: right;
+width: 40%;
+height: 80vh;
+box-sizing: border-box;
+background: #ffffff;
+border: 2px solid #000000;
+}
+body {
+font-family: 'Noto Sans JP', sans-serif;
+background-color: white;
+}
+.ku {
+text-align: center;
+}
+.kunakami {
+font-weight:700;
+font-size: 2.2em;
+color: black;
+-ms-writing-mode: tb-rl;
+writing-mode: vertical-rl;
+text-align: left;
+display: inline-block;
+}
+.hikou {
+writing-mode: horizontal-tb;
+}
+.timer {
+   background-color:#ffbc40;
+   color:#000;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin:10px;
+   width: 350px;
+   line-height: 32px;
+   font-size: 24px;
+   font-weight: bold;
+}
+.t30s {
+    background-color:#ffbc40;
+    color:#ff0055;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:10px;
+    width: 350px;
+    line-height: 32px;
+    font-size: 24px;
+    font-weight: bold;
+ }

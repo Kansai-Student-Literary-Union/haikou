@@ -1,0 +1,5 @@
+var kendai = "虫"
+var akateam = "灘高校Ａチーム"
+var aka1 = "緑、赤　街は洞窟めいて虫"
+var aka3 = "救急車今しがた行き虫の声"
+var aka5 = "虫鳴いてゐて家は箱"

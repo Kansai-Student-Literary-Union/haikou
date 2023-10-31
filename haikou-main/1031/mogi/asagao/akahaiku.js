@@ -1,0 +1,5 @@
+var kendai = "朝顔"
+var akateam = "灘高校Ａチーム"
+var aka1 = "朝顔の蕾に深き夜あらむ"
+var aka3 = "朝顔や住宅街はどれも似て"
+var aka5 = "色白に隈の目立つて牽牛花"
